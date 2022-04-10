@@ -1,0 +1,64 @@
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  height: 99%;
+  }
+
+.calculator {
+  background-color: grey;
+  border-radius: 10px;
+  width: 320px;
+  height: 400px;
+  margin: auto;
+  display: grid;
+  gap: 2px;
+  text-align: center;
+  grid-template-areas:
+    "display display display display"
+    "plus minus multiply divide"
+    "seven eight nine equals"
+    "four five six equals"
+    "one two three equals"
+    "zero dot cancel equals";
+  }
+
+  
+.key, #display {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.sign {
+  background-color: lightgrey;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+  }
+  
+#display {
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: end;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(57, 67, 72);
+    grid-area: display;
+  }
+  
+#display p {
+  margin-right: 10px;
+  }
+
+
+#equals {
+  border-radius: 0 0 10px 0;
+  background-color: salmon;
+  grid-area: equals;
+  }
+
+#zero {
+  border-radius: 0 0 0 10px;
+  }
